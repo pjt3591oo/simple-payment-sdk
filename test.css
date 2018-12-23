@@ -1,0 +1,11 @@
+button#mung_pay {
+    background-color: #0000ff;
+    border: 1px solid;
+    color: white;
+}
+
+button#mung_version {
+    background-color: #00ff00;
+    border: 5px solid;
+    color: black;
+}

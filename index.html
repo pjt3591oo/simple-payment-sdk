@@ -1,0 +1,26 @@
+<html>
+    <head>sdk example</head>
+    <body>
+        <button id="mung_pay">hpay 결제</button>
+        <button id="mung_version">hpay 버전</button>
+        <script src="./output/output.js"></script>
+        <script>
+            let hpay = Sdk.HPay
+            console.log(hpay)
+            
+            hpay.init({
+                "m": "production",
+                "key": "0xt19da123s9c9as"
+            })
+
+            
+            document.getElementById('mung_version').addEventListener('click', () => {
+                alert(hpay.version)
+            })
+            document.getElementById('mung_pay').addEventListener('click', () => {
+                hpay.move()
+            })
+
+        </script>
+    </body>
+</html>
